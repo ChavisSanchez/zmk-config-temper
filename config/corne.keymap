@@ -26,15 +26,15 @@
         lower_layer {
             // ------------------------------------------------------------------
             // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
-            // | TAB |     | UP  |     |     |   |  [  |  ]  |  :  |  \  |  `  |
-            // |  Z  | LFT | DWN | RGT |     |   |  -  |  =  |  ,  |  .  | CAP |
+            // | TAB |     | UP  |     | PUP |   |  [  |  ]  |  :  |  \  |  `  |
+            // | SHT | LFT | DWN | RGT | PDN |   |  -  |  =  |  ,  |  .  | CAP |
             //             | GUI | LWR | SPC |   | ENT | RSE | BKSP|
 
 
             bindings = <
 &none  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
-&none  &kp TAB       &trans          &kp UP_ARROW    &trans           &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON     &kp BSLH      &kp GRAVE     &none
-&none  &kp LSHFT     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &kp MINUS         &kp EQUAL          &kp COMMA     &kp PERIOD    &kp CAPSLOCK  &none
+&none  &kp TAB       &trans          &kp UP_ARROW    &trans           &kp PAGE_UP     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON     &kp BSLH      &kp GRAVE     &none
+&none  &kp LSHFT     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN   &kp MINUS         &kp EQUAL          &kp COMMA     &kp PERIOD    &kp CAPSLOCK  &none
                                      &trans          &trans           &kp SPACE       &kp RET           &trans             &trans
             >;
         };
